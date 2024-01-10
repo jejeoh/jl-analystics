@@ -1,0 +1,288 @@
+*{
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    margin: 0;
+}
+
+section.prem{
+    width: 100%;
+    height: 90vh;
+    background: rgb(0,48,98);
+    background: linear-gradient(135deg, rgba(0,48,98,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+}
+div.part{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.full{
+    width: 80%;
+}
+
+section.prem div.txt{
+    width: 80%;
+}
+section.prem div.titl{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+section.prem div.titl h3.titrepart{
+    color: #fff;
+    font-size: 3.17vw;
+}
+section.prem div.parag{
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+    height: 20vh;
+}
+section.prem div.parag p.expl{
+    color: #fff;
+    font-size: 1.5vw;
+}
+section.prem div.comm{
+    width: 100%;
+    text-align: center;
+    height: 5vh;
+    margin-top: 5vh;
+}
+section.prem div.comm a.com{
+    color: #fff;
+    font-size: 1.5vw;
+    text-decoration: none;
+    position: relative;
+}
+section.prem div.comm a.com::before{
+    content: '';
+    width: 0;
+    top: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #fff;
+    transition: .5s;
+    
+}
+section.prem div.comm a.com:hover::before{
+    width: 100%;
+}
+
+
+header{
+    top: -10vh;
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    position: sticky;
+    transition: .7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 20;
+}
+header.acti{
+    top: 0;
+
+}
+
+section.seg{
+    width: 100%;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,168,242,1) 100%);
+    display: flex;
+}
+section.seg div.txt{
+    width: 80%;
+}
+section.seg div.titl{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+section.seg div.titl h3.titrepart{
+    color: #000;
+    font-size: 3.17vw;
+}
+section.seg div.parag{
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+    height: 20vh;
+}
+section.seg div.parag p.expl{
+    color: #000;
+    font-size: 1.5vw;
+}
+section.seg div.comm{
+    width: 100%;
+    text-align: center;
+    height: 5vh;
+    margin-top: 5vh;
+}
+section.seg div.comm a.com{
+    color: #000;
+    font-size: 1.5vw;
+    text-decoration: none;
+    position: relative;
+}
+section.seg div.comm a.com::before{
+    content: '';
+    width: 0;
+    top: 100%;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    transition: .5s;
+    
+}
+section.seg div.comm a.com:hover::before{
+    width: 100%;
+}
+section.obj{
+    width: 100%;
+    height: 50vh;
+    background: rgb(0,48,98);
+    background: linear-gradient(90deg, rgba(0,48,98,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+}
+section.obj div.inf{
+    width: 25%;
+    height: 100%;
+}
+div.inf div.circle{
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(25% - 6px);
+    margin-top: 6vh;
+}
+div.circle img.in{
+    height: 60%;
+}
+div.expla{
+    width: 100%;
+    height: 5vh;
+    margin-top: 5vh;
+    text-align: center;
+}
+div.expla h4.exp{
+    color: #fff;
+    font-size: 1.5vw;
+    
+}
+section.commande{
+    background-color: #d0d0d0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.commande a{
+    width: 20%;
+    height: 8vh;
+    background-color: #002f61;
+    position: relative;
+    border-radius: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2vw;
+    transition: .7s;
+    box-shadow: 0 0 0 #ffe600;
+}
+section.commande a:hover{
+    box-shadow: 1px 1px 100px #ffe600;
+}
+
+@media (max-width: 830px){
+    section.prem{
+        display: block;
+    }
+    div.part{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.prem div.parag{
+        margin-top: 3vh;
+        height: 15vh;
+    }
+    section.prem div.titl h3.titrepart{
+        font-size: 6vw;
+    }
+    section.prem div.parag p.expl{
+        font-size: 3vw;
+    }
+    section.prem div.comm{
+
+        margin-top: 0vh;
+    }
+    section.prem div.comm a.com{
+        font-size: 4vw;
+    }
+    section.seg{
+        display: block;
+    }
+    section.seg div.parag{
+        margin-top: 3vh;
+        height: 15vh;
+    }
+    section.seg div.titl h3.titrepart{
+        font-size: 6vw;
+    }
+    section.seg div.parag p.expl{
+        font-size: 3vw;
+    }
+    section.seg div.comm{
+
+        margin-top: 0vh;
+    }
+    section.seg div.comm a.com{
+        font-size: 4vw;
+    }
+    section.obj{
+        width: 100%;
+        height: 50vh;
+        background: rgb(0,48,98);
+        background: linear-gradient(90deg, rgba(0,48,98,1) 0%, rgba(0,0,0,1) 100%);
+        display: flex;
+        flex-wrap: wrap;
+
+        overflow: hidden;
+    }
+    section.obj div.inf{
+        width: 50%;
+        height: 50%;
+        overflow: hidden;
+    }
+    div.inf div.circle{
+        width: 40%;
+        margin-left: calc(30% - 6px);
+        margin-top: 4vh;
+    }
+    div.expla{
+        margin-top: 3vh;
+    }
+    div.expla h4.exp{
+        font-size: 2.5vw;
+    }
+    section.commande a{
+        width: 50%;
+        font-size: 4.5vw;
+    }
+    
+    
+}
