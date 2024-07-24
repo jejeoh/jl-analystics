@@ -1,0 +1,5 @@
+navigateur : ++ navigator.userAgentData.brands[2]["brand"] ++
+os : ++ navigator.userAgentData.platform ++
+langue : ++ navigator.language ++
+
+https://ip-api.com/docs/api:json
