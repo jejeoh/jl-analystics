@@ -3,3 +3,6 @@ os : ++ navigator.userAgentData.platform ++
 langue : ++ navigator.language ++
 
 https://ip-api.com/docs/api:json
+
+
+CREATE TABLE `data`.`users` ( `id` INT NOT NULL AUTO_INCREMENT , `ip` VARCHAR(38) NOT NULL , `country` VARCHAR(256) NOT NULL , `Language` VARCHAR(256) NOT NULL , `os` VARCHAR(256) NOT NULL , `navigateur` VARCHAR(256) NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
